@@ -22,58 +22,42 @@ body{
 
 
 
-.nav-bar{
-    background-color: var(--main-section);
-    padding: 45px 0;
+.navbar{
+    background-color: #1E202B;
 }
-
-.brand-logo{
-    display: flex;
-    text-decoration: none;
-    
-}
-
-.brand-logo h1{
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-color);
-}
-.brand-logo h6{
-    font-size: 10px;
-    font-weight: 300;
-    color: #BFC1C8;
-    line-height: 15px;
-}
-
 .logo{
-    width: fit-content;
-    height: fit-content;
+    width: 200px;
+    color: #fff;
 }
-
-.nav-buttun{
-    width: fit-content;
+.logo img {
+    width: 50px;
 }
-.nav-buttun li{
-    margin: 5px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo small{
+    font-size: 10px;
 }
-
-.nav-buttun > li > a{
-    color:var(--text-color) ;
-    padding: 5px 25px;
+.logoText{
+    width: 230px;
+}
+.logoText h1{
+    font-size: 16px;
+}
+.nav-link{
+    color:var(--text-color) !important;
+    padding: 5px 25px !important;
     text-decoration: none;
     border: 2px solid #009bd800 ;
     border-radius: 20px;
     transition: all 0.4s ;
+    font-size: 14px;
+
 }
-.nav-buttun > li > a:hover{
-    color: var(--buttun-color-and-hover);
+.linkStyle:hover{
+    color: var(--buttun-color-and-hover) !important;
     border: 2px solid #009AD8 ;
     border-radius: 20px;
     padding: 5px 25px;
+
+    
 }
 
 .hero{
@@ -334,6 +318,4 @@ body{
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
-
 }
-
