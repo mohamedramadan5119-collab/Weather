@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page-content">
+      <div class="nav-bar">
+        <nav class="container d-flex justify-content-between px-5">
+          <a href="#" class="brand-logo">
+            <img src="./images/imgi_1_logo.png" alt="" class="px-4 logo" />
+            <div>
+              <h1>Weather</h1>
+              <h6>tagline goes here</h6>
+            </div>
+          </a>
+          <ul class="nav-buttun d-flex list-unstyled m-0 p-0 gx-1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Live cameras</a></li>
+            <li><a href="#">Photo</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <form action="" class="form-input">
+          <input
+            type="text"
+            placeholder="Find Your location"
+            id="searchInput"
+          />
+          <button id="submit">Find</button>
+        </form>
+      </div>
+    </section>
+    <section class="forecast-table">
+      <div class="container">
+        <div class="row forecast-container d-flex text-center">
+          <div class="col-md-4 p-0">
+            <div class="forecast-size-background">
+              <div class="today forecast">
+                <div class="forecast-header d-flex justify-content-between">
+                  <div class="day">Friday</div>
+                  <div class="month">7November</div>
+                </div>
+                <div class="forecast-content-1">
+                  <div class="city d-flex">Cairo</div>
+                  <div class="degree-1">23.2<span>o</span>C</div>
+                  <div class="icon">
+                    <img
+                      class="condition"
+                      src="./images/imgi_2_113.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-clear my-3">
+                    <span class="weatherDesc">clear</span>
+                  </div>
+                  <div class="icon-content">
+                    <span
+                      ><img
+                        src="./images/imgi_3_icon-umberella.png"
+                        alt=""
+                      /><span class="humidity">20%</span></span
+                    >
+                    <span
+                      ><img src="./images/imgi_4_icon-wind.png" alt="" /><span
+                        class="windSpeed"
+                        >18Km/h</span
+                      ></span
+                    >
+                    <span
+                      ><img
+                        src="./images/imgi_5_icon-compass.png"
+                        alt=""
+                      /><span class="windDir">East</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0 bg-center">
+            <div class="">
+              <div class="forecast">
+                <div class="forecast-header bg-center-header">
+                  <div class="day-2">Saturday</div>
+                </div>
+                <div class="forecast-content d-flex flex-column">
+                  <span class="mb-3"
+                    ><img
+                      class="nextDayIcon"
+                      src="./images/imgi_6_113.png"
+                      alt=""
+                  /></span>
+                  <div class="degree-max-1">23.<span>o</span>C</div>
+                  <small class="degree-samll-1">23.<span>o</span>C</small>
+                  <div class="weather-conditions-1">Sunny</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="forecast-size-background">
+              <div class="forecast">
+                <div class="forecast-header">
+                  <div class="day-3">Sunday</div>
+                </div>
+                <div class="forecast-content d-flex flex-column">
+                  <span class="mb-3"
+                    ><img
+                      class="nextDayIcon2"
+                      src="./images/imgi_6_113.png"
+                      alt=""
+                  /></span>
+                  <div class="degree-max-2">23.<span>o</span>C</div>
+                  <small class="degree-samll-2">23.<span>o</span>C</small>
+                  <div class="weather-conditions-2">Sunny</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row site-footer">
+          <div class="col-md-8">
+            <form action="" class="form-footer">
+              <input
+                class="input-footer"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="button-footer">Subscribe</button>
+            </form>
+            <p class="Copyright">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="social-link d-flex justify-content-center">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

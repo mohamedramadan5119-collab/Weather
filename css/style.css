@@ -1,0 +1,337 @@
+:root{
+    --main-section:#1E202B;
+    --footer-color:#262936;
+    --buttun-color-and-hover:#009AD8;
+    --text-color:#FFFFFF;
+    --text-color-2:#bfc1c8;
+    --today-header-1:#2D303D;
+    --today-header-2:#222530;
+    --today-content-1:#323544;
+    --today-content-2:#262936;
+    --font-family:  sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-section);
+    font-family: var(--font-family);
+}
+
+
+
+.nav-bar{
+    background-color: var(--main-section);
+    padding: 45px 0;
+}
+
+.brand-logo{
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.brand-logo h1{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.brand-logo h6{
+    font-size: 10px;
+    font-weight: 300;
+    color: #BFC1C8;
+    line-height: 15px;
+}
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-buttun{
+    width: fit-content;
+}
+.nav-buttun li{
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttun > li > a{
+    color:var(--text-color) ;
+    padding: 5px 25px;
+    text-decoration: none;
+    border: 2px solid #009bd800 ;
+    border-radius: 20px;
+    transition: all 0.4s ;
+}
+.nav-buttun > li > a:hover{
+    color: var(--buttun-color-and-hover);
+    border: 2px solid #009AD8 ;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+.hero{
+    background-image: url(/images/imgi_7_banner.png);
+    background-position: center;
+    height: 350px;
+        padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.form-input{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 90%;
+}
+
+
+#searchInput{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: none;
+    caret-color: white; 
+    outline: none;
+    background-color: var(--main-section);
+    color: var(--text-color);
+}
+
+#submit{
+    padding: 10px 40px;
+    border-radius: 70px;
+    border: none;
+    background-color: var(--buttun-color-and-hover);
+    color: white;
+    position: absolute;
+    right: .5%;
+
+}
+
+
+.forecast-table{
+    position: relative;
+    top: -150px;
+}
+.forecast-container{
+    margin: auto;
+    width: 90%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.forecast-header{
+    padding: 10px 10px;
+    background-color: var(--today-header-1);
+    
+}
+
+.forecast-content-1{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.forecast-content{
+    padding: 50px 20px;
+}
+
+.forecast-size-background{
+    background-color: var(--today-content-1);
+    height: 415px;
+    width: 100%;
+}
+
+.bg-center-header{
+    background-color: var(--today-header-2);
+}
+.bg-center{
+    background-color: var(--today-content-2);
+    
+}
+
+.city{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--text-color-2);
+}
+
+.day{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-color-2);
+}
+.day-2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-color-2);
+}
+.day-3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--text-color-2);
+}
+.month{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--text-color-2);
+}
+
+.degree-1{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+
+.degree-1  >span{
+    font-size: 60px;
+    position: relative;
+    top: -40px;
+}
+.degree-max-1, .degree-max-2{
+    font-size: 24px ;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--text-color);
+}
+
+.degree-max-1 >span{
+    position: relative;
+    top: -5px;
+}
+.degree-max-2 >span{
+    position: relative;
+    top: -5px;
+}
+
+.degree-samll-1, .degree-samll-2{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    color: var(--text-color-2);
+}
+.degree-samll >span{
+    position: relative;
+    top: -5px;
+    font-size: 2px;
+}
+
+.weather-conditions-1, .weather-conditions-2{
+    color: var(--buttun-color-and-hover);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 20px 0;
+}
+
+.text-clear{
+    color: var(--buttun-color-and-hover);
+}
+
+.icon-content{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 10px;
+}
+.icon-content span{
+    padding-right: 20px;
+    color: var(--text-color-2);
+}
+.icon-content span img{
+    padding-right: 5px;
+}
+
+.page-footer{
+    background-color: var(--footer-color);
+    padding: 30px 0;
+    
+
+}
+
+.site-footer{
+    margin: auto;
+    width: 90%;
+}
+
+.form-footer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 90%;
+}
+
+
+
+.input-footer{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: none;
+    caret-color: white; 
+    outline: none;
+    background-color: var(--main-section);
+    
+}
+
+.button-footer{
+    padding: 12px 25px;
+    border-radius: 70px;
+    border: none;
+    background-color: var(--buttun-color-and-hover);
+    color:var(--text-color);
+    position: absolute;
+    right: 0.8%;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.social-link a{
+    padding: 0;
+    margin: 0 5px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--buttun-color-and-hover);
+    background-color: var(--main-section);
+    transition: all 0.4s ;
+    font-size: 20px;
+}
+.social-link a:hover{
+    background-color: var(--buttun-color-and-hover);
+    color: var(--text-color);
+}
+
+.Copyright{
+    color: var(--text-color-2);
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
